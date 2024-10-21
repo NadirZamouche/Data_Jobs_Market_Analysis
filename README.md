@@ -227,20 +227,5 @@ Here's a breaksown of the results for the paying skills for Data Engineers:
 | NoSQL         | 198          | 118,934             |
 | Hadoop        | 190          | 122,423             |
 | Databricks    | 190          | 121,214             |
-| Scala         | 183          | 127,975             |
-| SQL Server    | 178          | 115,432             |
-| Power BI      | 148          | 114,527             |
-| Git           | 134          | 121,588             |
-| Oracle        | 132          | 118,411             |
-| R             | 120          | 124,865             |
-| SSIS          | 116          | 113,577             |
-| GCP           | 115          | 124,690             |
-| MySQL         | 113          | 117,483             |
-| Flow          | 102          | 116,519             |
-| Docker        | 95           | 132,936             |
 
 *Table of the most optimal skills for data engineer sorted by salary*
-
-# What I learned
-
-# Conclusion
