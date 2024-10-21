@@ -148,9 +148,37 @@ ORDER BY
 LIMIT 25;
 ```
 Here's a breaksown of the results for the paying skills for Sata Engineers:
-- **Machine Learning** and **AI frameworks** like **Keras** and **Numpy** are valued highly, offering salaries around **$140,000** and **$137,352** respectively. This emphasizes the demand for skills in building, training, and deploying machine learning models.
-- **Cloud Technologies** such as **VMware** and **Kubernetes** offer competitive salaries, averaging **$140,000** and **$138,313**. This is reflective of the industry's shift towards cloud-native architectures and containerized applications for data processing.
-- **Database Technologies** like **SQLite** and **Neo4j** are among the top-paying skills, with average salaries of **$141,500** and **$135,228**. This highlights the need for efficient data storage, management, and querying solutions.
+- **Machine Learning** and **AI frameworks** like **Keras** and **Numpy** are valued highly, offering salaries around $140,000 and $137,352 respectively. This emphasizes the demand for skills in building, training, and deploying machine learning models.
+- **Cloud Technologies** such as **VMware** and **Kubernetes** offer competitive salaries, averaging $140,000 and $138,313. This is reflective of the industry's shift towards cloud-native architectures and containerized applications for data processing.
+- **Database Technologies** like **SQLite** and **Neo4j** are among the top-paying skills, with average salaries of $141,500 and $135,228. This highlights the need for efficient data storage, management, and querying solutions.
+
+| Skills    | Average Salary ($) |
+|-----------|--------------------|
+| ggplot2   | 176,250            |
+| plotly    | 176,250            |
+| kotlin    | 159,583            |
+| ubuntu    | 150,000            |
+| clojure   | 147,500            |
+| matlab    | 146,400            |
+| colocation| 145,000            |
+| next.js   | 145,000            |
+| flutter   | 145,000            |
+| groovy    | 142,500            |
+| sqlite    | 141,500            |
+| splunk    | 141,155            |
+| keras     | 140,000            |
+| vmware    | 140,000            |
+| visio     | 139,667            |
+| kubernetes| 138,313            |
+| golang    | 138,183            |
+| centos    | 137,500            |
+| aurora    | 137,400            |
+| numpy     | 137,352            |
+| linux     | 136,642            |
+| graphql   | 135,527            |
+| neo4j     | 135,228            |
+| asana     | 134,875            |
+| ruby      | 134,464            |
 
 # What I learned
 
