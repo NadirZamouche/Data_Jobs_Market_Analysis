@@ -90,7 +90,7 @@ ORDER BY
         salary_year_avg DESC;
 ```
 ![Top Paying Skills](assets/top_paying_roles_skills.png)
-*Bar graph visualizing the count of skills for the top 10 paying jobs for data engineers.*
+*Bar graph visualizing the count of skills for the top 10 paying jobs for data engineers*
 
 ### 3. In-Demand Skills for Data Engineers
 This query helped identify the skills most frequently requested in job postings, directly focus to areas with high demand.
@@ -147,7 +147,7 @@ ORDER BY
     salary_avg DESC
 LIMIT 25;
 ```
-Here's a breaksown of the results for the paying skills for Sata Engineers:
+Here's a breaksown of the results for the paying skills for Data Engineers:
 - **Machine Learning** and **AI frameworks** like **Keras** and **Numpy** are valued highly, offering salaries around $140,000 and $137,352 respectively. This emphasizes the demand for skills in building, training, and deploying machine learning models.
 - **Cloud Technologies** such as **VMware** and **Kubernetes** offer competitive salaries, averaging $140,000 and $138,313. This is reflective of the industry's shift towards cloud-native architectures and containerized applications for data processing.
 - **Database Technologies** like **SQLite** and **Neo4j** are among the top-paying skills, with average salaries of $141,500 and $135,228. This highlights the need for efficient data storage, management, and querying solutions.
@@ -179,6 +179,67 @@ Here's a breaksown of the results for the paying skills for Sata Engineers:
 | neo4j     | 135,228            |
 | asana     | 134,875            |
 | ruby      | 134,464            |
+
+*Table of the average salary for the top 10 paying skills for data engineers*
+
+### 5. Most Optimal Skills to Learn
+Combining insights from demand and salary data, this query aimed to pinpoint skills that are both in high demand and have high salaries, offereing a strategic focus for skill development.
+```SQL
+SELECT
+    skill_table.skill_id,
+    skill_table.skills,
+    COUNT(skill_job_table.job_id) demand_count,
+    ROUND(AVG(job_table.salary_year_avg),0) salary_avg
+FROM
+    job_postings_fact job_table
+INNER JOIN skills_job_dim skill_job_table
+    ON job_table.job_id = skill_job_table.job_id
+INNER JOIN skills_dim skill_table
+    ON skill_job_table.skill_id = skill_table.skill_id
+WHERE
+    job_title = 'Data Engineer'
+    AND salary_year_avg IS NOT NULL
+GROUP BY
+    skill_table.skill_id
+ORDER BY
+    demand_count DESC,
+    salary_avg DESC
+LIMIT 25;
+```
+Here's a breaksown of the results for the paying skills for Data Engineers:
+- **SQL** remains a foundational skill, with the highest demand count of 967 and an average salary of $120,939, indicating its critical role in data management and querying.
+- **Python** follows closely with 913 demand count and a higher average salary of $124,767, emphasizing its importance for data manipulation and analysis.
+- **AWS** and **Azure**, two leading cloud platforms, have substantial demand counts of 563 and 442, respectively, along with competitive salaries, showcasing the industry's shift toward cloud-based solutions.
+
+| Skills        | Demand Count | Average Salary ($) |
+|---------------|--------------|---------------------|
+| SQL           | 967          | 120,939             |
+| Python        | 913          | 124,767             |
+| AWS           | 563          | 124,664             |
+| Azure         | 442          | 121,895             |
+| Spark         | 388          | 128,998             |
+| Snowflake     | 301          | 124,490             |
+| Java          | 278          | 123,158             |
+| Redshift      | 221          | 124,370             |
+| Tableau       | 208          | 117,229             |
+| Airflow       | 206          | 129,584             |
+| Kafka         | 204          | 128,569             |
+| NoSQL         | 198          | 118,934             |
+| Hadoop        | 190          | 122,423             |
+| Databricks    | 190          | 121,214             |
+| Scala         | 183          | 127,975             |
+| SQL Server    | 178          | 115,432             |
+| Power BI      | 148          | 114,527             |
+| Git           | 134          | 121,588             |
+| Oracle        | 132          | 118,411             |
+| R             | 120          | 124,865             |
+| SSIS          | 116          | 113,577             |
+| GCP           | 115          | 124,690             |
+| MySQL         | 113          | 117,483             |
+| Flow          | 102          | 116,519             |
+| Docker        | 95           | 132,936             |
+
+*Table of the most optimal skills for data engineer sorted by salary*
 
 # What I learned
 
