@@ -89,7 +89,7 @@ INNER JOIN skills_dim skill_table
 ORDER BY
         salary_year_avg DESC;
 ```
-![Top Paying Skills](assets/top_paying_roles_skills.png)
+![Top Paying Skills](assets/count_skills_top_paying_roles.png)
 *Bar graph visualizing the count of skills for the top 10 paying jobs for data engineers*
 
 ### 3. In-Demand Skills for Data Engineers
