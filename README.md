@@ -1,6 +1,8 @@
 # Introduction
 🚀 Dive into the data job market! 📊 Focusing on data engineer roles, this project explores 💰 top-paying jobs, 🔥 in-demand skills, and 📈 where high demand meets high salary in data engineering.
 
+📂 Download the dataset from here: [Data](https://drive.google.com/drive/folders/1moeWYoUtUklJO6NJdWo9OV8zWjRn0rjN)  
+
 🔍 SQL queries? Check them out here: [SQL_Queries folder](/SQL_Queries/)
 
 # Background
